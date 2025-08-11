@@ -6,11 +6,12 @@
 	let userEntry = userInput("Guess the number:  ");
 
 	while(userEntry != 8) {
-		if (userEntry == SECRET) {
-			console.log("Correct!");
-		} else {
-			console.log("Try again!");
-		}
+		userEntry = userInput("Try again:  ");
+	}
+	if (userEntry == SECRET) {
+		console.log("Correct!");
+	} else {
+		console.log("Try again!")
 	}
 //}
 
